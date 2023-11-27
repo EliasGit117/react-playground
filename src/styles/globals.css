@@ -75,10 +75,18 @@
     @apply bg-background text-foreground;
   }
 
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+  }
+
   @media (prefers-color-scheme: dark) {
     body {
-      color-scheme: dark;
       @apply dark;
+    }
+
+    :root {
+      color-scheme: dark;
     }
   }
 }
